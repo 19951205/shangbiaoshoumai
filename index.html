@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="no">
+		<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<!-- [if it IE 9]>
+			<script src="lib/html5shiv/html5shiv.min.js"></script>
+	 	    <script src="lib/respond/respond.min.js"></script>
+		<![end if]-->
+		<title>商标售卖</title>
+	</head>
+
+	<body>
+		<div class="maxWidth">
+			<!--banner-->
+			<div class="cyz-banner">
+				<div class="banner-main">
+					<div class="container">
+						<div class="banner-select bd100 hidden-xs animated fadeInDown">
+							<form class="clearfix">
+								<div class="col-xs-3 i-text fs16 show">
+									<input class="pl54 i-text-open" type="text" placeholder="请选择商标的字数" value="" />
+									<i class="ivu-icon tstion03">
+<!--										<img src="images/icon/select.png"/>-->
+									</i>
+									<div class="i-text-show ">
+										<ul class="list-ul ">
+											<li class="bd50b tstion03 active">1</li>
+											<li class="bd50b tstion03">2</li>
+											<li class="bd50b tstion03">3</li>
+											<li class="bd50b tstion03">4</li>
+											<li class="bd50b tstion03">5</li>
+											<li class="bd50b tstion03">6</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-xs-3 i-text fs16 line show">
+									<input class="pl54 i-text-open" type="text" placeholder="选择商标类型" value="" />
+									<i class="ivu-icon tstion03">
+										<!--<img src="images/icon/select.png"/>-->
+									</i>
+									<div class="i-text-show">
+										<ul class="list-ul ">
+											<li class="bd50b tstion03 active">图</li>
+											<li class="bd50b tstion03">字</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-xs-3 i-text fs16 line">
+									<input class="pl54" type="text" placeholder="输入关键词" />
+								</div>
+								<button type="submit" class="col-xs-3 sreach fs24">
+									搜索
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div id="banner" class="carousel slide" data-ride="carousel">
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner clearfix" role="listbox">
+						<div class="item active">
+							<img src="images/pic/banner.png" />
+							<div class="banner-text fs48">
+								<p>建设知识产权型企业</p>
+								<p>推进项目品牌化发展</p>
+							</div>
+						</div>
+						<div class="item">
+							<img src="images/pic/banner.png" />
+							<div class="banner-text fs48">
+								<p>建设知识产权型企业</p>
+								<p>推进项目品牌化发展</p>
+							</div>
+						</div>
+					</div>
+
+					<ol class="carousel-indicators">
+						<!--<li data-target="#banner" data-slide-to="0" class="active"></li>
+						<li data-target="#banner" data-slide-to="1"></li>-->
+					</ol>
+					<!-- Controls -->
+					<div class="banner-botton clearfix hidden-xs hidden-sm">
+						<a rel="nofollow" class="pull-left left myarousel-control" href="#banner" role="button" data-slide="prev">
+							<span class="glyphicon myglyphicon-left" aria-hidden="true">
+					    	<img src="images/icon/banner-l.png"/>
+					    </span>
+						</a>
+						<a rel="nofollow" class="pull-right right myarousel-control" href="#banner" role="button" data-slide="next">
+							<span class="glyphicon myglyphicon-right" aria-hidden="true">
+					    	<img src="images/icon/banner-r.png" />
+					    </span>
+						</a>
+					</div>
+				</div>
+				<!--手机端查看更多-->
+				<div class="choose-more-mian visible-xs animated fadeInDown">
+					<a rel="nofollow" href="#" class="fs18 bd100">
+						<span class="look-more tstion03">选择你要搜索的内容</span>
+					</a>
+				</div>
+				<div id="choose-more-detial" class="hidden-lg hidden-md hidden-sm">
+					<div class="container">
+						<div class="inner">
+							<div>
+								<h4 class="h4">请选择商标的字数</h4>
+								<input type="hidden" name="" id="" value="" />
+								<ul class="detial-ul mg07 list-one">
+									<li class="bd50b tstion03 active">1</li>
+									<li class="bd50b tstion03">2</li>
+									<li class="bd50b tstion03">3</li>
+									<li class="bd50b tstion03">4</li>
+									<li class="bd50b tstion03">5</li>
+									<li class="bd50b tstion03">6</li>
+								</ul>
+							</div>
+							<div>
+								<h4 class="h4">选择商标类型</h4>
+								<input type="hidden" name="" id="" value="" />
+								<ul class="detial-ul mg07 list-two">
+									<li class="bd50b tstion03 active">图</li>
+									<li class="bd50b tstion03">字</li>
+								</ul>
+							</div>
+							<input class="guanjian mg07" type="text" placeholder="输入关键词">
+							<button type="submit" class="sj-search mg07">搜索</button>
+						</div>
+						<div class="inner-close bd50b"></div>
+					</div>
+				</div>
+				<!--/手机端查看更多-->
+				<div class="cyz-banner-main">
+					<div class="container animationD2 animated myfadeInDown">
+						<!--导航开始-->
+						<div class="cyz-nav ptb60">
+							<div class="navbar navbar-mynav navbar-static-top">
+								<div class="cyz-logo clearfix">
+									<div class="navbar-header animated fadeInDown">
+										<button id="btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-list" aria-controls="nav-list"></button>
+										<a rel="nofollow" class="navbar-brand" href="./index.html">
+											<img src="images/icon/logo.png" width="100%" />
+										</a>
+									</div>
+									<div class="navbar-collapse pull-right collapse" id="nav-list" style="border: none; height: 0px;" aria-expanded="false">
+										<ul class="nav navbar-nav clearfix pt30">
+											<li class="clearfix">
+	<a rel="nofollow" href="./index.html" class="active">
+		<p class="fs16 lh36">网站首页</p>
+		<p class="line tstion03"></p>
+	</a>
+</li>
+<li class="clearfix">
+	<a rel="nofollow" href="./aboutus.html">
+		<p class="fs16 lh36">关于我们</p>
+		<p class="line tstion03"></p>
+	</a>
+</li>
+<li class="clearfix">
+	<a rel="nofollow" href="./food.html">
+		<p class="fs16 lh36">品牌集合
+			<p>
+				<p class="line tstion03"></p>
+	</a>
+</li>
+<li class="clearfix">
+	<a rel="nofollow" href="./news.html">
+		<p class="fs16 lh36">新闻中心
+			<p>
+				<p class="line tstion03"></p>
+	</a>
+</li>
+<li class="clearfix">
+	<a rel="nofollow" href="./trademark.html">
+		<p class="fs16 lh36">商标知识
+			<p>
+				<p class="line tstion03"></p>
+	</a>
+</li>
+<li class="clearfix">
+	<a rel="nofollow" href="./contact.html">
+		<p class="fs16 lh36">联系我们
+			<p>
+				<p class="line tstion03"></p>
+	</a>
+</li>
+										</ul>
+										<div id='nav-close' class="visible-xs"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--导航结束-->
+					</div>
+				</div>
+			</div>
+			<!--/banner-->
+			<!--品牌集合 -->
+			<div class="ppjh cyz-ppjh cyz-ppjhs ovhide">
+				<div class="cyz-base-head op00">
+					<h2 class="h2 fs48 pt80 lh60">品牌集合</h2>
+					<p class="Yw fs18 lh24">BRAND COLLECTION</p>
+					<div class="head-line mtb26"></div>
+					<p class="Zw fs24">专业服务餐饮行业20年</p>
+				</div>
+				<div class="cyz-bg01">
+					<div class="container">
+						<div class="look-more-mian ptb50 op00">
+							<a rel="nofollow" href="#" class="fs18 tstion03 bd100">
+								<span class="look-more tstion03">查看详情</span>
+							</a>
+						</div>
+						<div id="ppjhBanner" class="carousel slide" data-ride="carousel">
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner clearfix">
+								<div class="item clearfix active">
+									<div class="col-md-3 col-xs-6 op00">
+										<div class="border-x tstion03">
+											<div class="image ptb42">
+												<img src="images/pic/logo_1.png" />
+											</div>
+											<div class="list ptb26">
+												<p class="fs14">商标名称</p>
+												<h3 class="lh50">柠檬工坊</h3>
+												<p class="fs14 fs">注册号：8714526</p>
+												<!--这个是弹窗的核定使用商品/服务项目：-->
+												<p class="detial" >餐厅；饭店；流动餐厅；饭店；流动饮食供应；快餐店；住所代理(旅馆、供膳寄宿处)；自助餐馆；养老院； 日间托儿所（看孩子）；烹饪设备出租；出租椅子、桌子、桌布和玻璃器皿（截止）
+												饮食供应；快餐店；住所代理(旅馆、供膳寄宿处)；自助餐馆；养老院； 日间托儿所（看孩子）；烹饪设备出租；出租椅子、桌子、桌布和玻璃器皿（截止）
+												</p>
+												<div class="look-more-white pt20">
+													<a rel="nofollow" class="tstion03 bd100">
+														<span class="more-white tstion03">查看详情</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-xs-6 op00">
+										<div class="border-x tstion03">
+											<div class="image ptb42">
+												<img src="images/pic/logo_2.png" />
+											</div>
+											<div class="list ptb26">
+												<p class="fs14">商标名称</p>
+												<h3 class="lh50">豪爷</h3>
+												<p class="fs14 fs">注册号：8714536</p>
+												<!--这个是弹窗的核定使用商品/服务项目：-->
+												<p class="detial" >餐厅；饭店；流动饮食供应；快餐店；住所代理(旅馆、供膳寄宿处)；自助餐馆；养老院； 日间托儿所（看孩子）；烹饪设备出租；出租椅子、桌子、桌布和玻璃器皿（截止）
+												</p>
+												<div class="look-more-white pt20">
+													<a rel="nofollow" class="tstion03 bd100">
+														<span class="more-white tstion03">查看详情</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-xs-6 op00">
+										<div class="border-x tstion03">
+											<div class="image ptb42">
+												<img src="images/pic/logo_3.png" />
+											</div>
+											<div class="list ptb26">
+												<p class="fs14">商标名称</p>
+												<h3 class="lh50">麦芙仕</h3>
+												<p class="fs14 fs">注册号：87145264</p>
+												<!--这个是弹窗的核定使用商品/服务项目：-->
+												<p class="detial" >餐厅；饭店；流动饮食供应；快餐店；住所代理(旅馆、供膳寄宿处)；自助餐馆；养老院； 日间托儿所（看孩子）；烹饪设备出租；出租椅子、桌子、桌布和玻璃器皿（截止）
+												</p>
+												<div class="look-more-white pt20">
+													<a rel="nofollow" class="tstion03 bd100">
+														<span class="more-white tstion03">查看详情</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-xs-6 op00">
+										<div class="border-x tstion03">
+											<div class="image ptb42">
+												<img src="images/pic/logo_4.png" />
+											</div>
+											<div class="list ptb26">
+												<p class="fs14">商标名称</p>
+												<h3 class="lh50">侃鱼</h3>
+												<p class="fs14 fs">注册号：87145236</p>
+												<!--这个是弹窗的核定使用商品/服务项目：-->
+												<p class="detial" >餐厅；饭店；流动饮食供应；快餐店；住所代理(旅馆、供膳寄宿处)；自助餐馆；养老院； 日间托儿所（看孩子）；烹饪设备出租；出租椅子、桌子、桌布和玻璃器皿（截止）
+												</p>
+												<div class="look-more-white pt20 bd100">
+													<a rel="nofollow" class="tstion03 bd100">
+														<span class="more-white tstion03">查看详情</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item clearfix">
+									<div class="col-md-3 col-xs-6">
+										<div class="border-x tstion03">
+											<div class="image ptb42">
+												<img src="images/pic/logo_3.png" />
+											</div>
+											<div class="list ptb26">
+												<p class="fs14">商标名称</p>
+												<h3 class="lh50">麦芙仕</h3>
+												<p class="fs14 fs">注册号：87145264</p>
+												<div class="look-more-white pt20">
+													<a rel="nofollow" class="tstion03 bd100">
+														<span class="more-white tstion03">查看详情</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-xs-6">
+										<div class="border-x tstion03">
+											<div class="image ptb42">
+												<img src="images/pic/logo_4.png" />
+											</div>
+											<div class="list ptb26">
+												<p class="fs14">商标名称</p>
+												<h3 class="lh50">侃鱼</h3>
+												<p class="fs14 fs">注册号：87145236</p>
+												<div class="look-more-white pt20 bd100">
+													<a rel="nofollow" class="tstion03 bd100">
+														<span class="more-white tstion03">查看详情</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<ol class="carousel-indicators mt55">
+								<li data-target="#ppjhBanner" data-slide-to="0" class="active tstion03"></li>
+								<li data-target="#ppjhBanner" data-slide-to="1" class="tstion03"></li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/品牌集合 -->
+			<!--关于我们-->
+			<div class="cyz-aboutus mt256 ovhide">
+				<div class="cyz-base-head op00">
+					<div class="container">
+						<h2 class="h2 fs48 pt80 lh60">关于我们</h2>
+						<p class="Yw fs18 lh24">ABOUT US</p>
+						<div class="head-line mtb26"></div>
+					</div>
+				</div>
+				<div class="cyz-bg01 bg02">
+					<div class="container cyz-base-head op00">
+						<p class="Zw fs24">拥有1000+商标资源</p>
+						<div class="cyz-main pt70">
+							<div class="image">
+								<img src="images/pic/shouye-1.jpg" />
+							</div>
+							<div class="cyz-aboutus-detial">
+								<div class="detial">
+									<div class="main fs16 lh24">
+										<p>目前服务项目包括餐饮行业等商标买卖。旗下拥有1000+专业优秀商标资源。公司凭借专业的商 </p>
+										<p>标运作经验，优质高效的服务赢得了合作伙伴的好评和信赖。多年的行业沉淀，对中国餐饮行业的品牌 </p>
+										<p>商标注册的远见卓识，得到了业内餐饮业创业者的高度认可。</p>
+									</div>
+									<div class="look-more-mian mtb50 animated">
+										<a rel="nofollow" href="#" class="fs18 tstion03 bd100">
+											<span class="look-more tstion03">查看详情</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/关于我们-->
+			<!--商标注册-->
+			<div class="cyz-sbzc ovhide">
+				<div class="images">
+					<img src="images/pic/shouye-2.jpg" />
+				</div>
+				<div class="cyz-sbzc-detial tbcenters">
+					<div style="width: 100%;">
+						<div class="text op00 fs48 song">
+							<p>商标注册基本常识</p>
+							<p>带您一次性深入了解清楚</p>
+						</div>
+						<div class="look-more-mian mtb50 op00">
+							<a rel="nofollow" href="#" class="fs18 tstion03 bd100">
+								<span class="look-more tstion03">点我了解商标知识</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/商标注册-->
+			<!--新闻中心-->
+			<div class="cyz-news ovhide">
+				<div class="cyz-base-head op00">
+					<div class="container">
+						<h2 class="h2 fs48 pt80 lh60">新闻资讯</h2>
+						<p class="Yw fs18 lh24">NEWS</p>
+						<div class="head-line mtb26"></div>
+						<p class="Zw fs24">实时更新最新动态</p>
+					</div>
+				</div>
+				<div class="cyz-bg01 bg03">
+					<div class="container">
+						<div class="look-more-mian mtb50 op00">
+							<a rel="nofollow" href="#" class="fs18 tstion03 bd100">
+								<span class="look-more tstion03">查看详情</span>
+							</a>
+						</div>
+						<div class="cyz-news-detial">
+							<ul>
+								<li class="clearfix news-li bd100 tbcenters op00 tstion03">
+									<div class="date col-md-2 col-xs-4">
+										<h4 class="fs60 lh80">
+												2018
+											</h4>
+										<p class="fs30 lh36 op06">
+											07-08
+										</p>
+									</div>
+									<div class="main col-lg-8 col-xs-8">
+										<a rel="nofollow" href="newsdetial.html" class="tstion03">
+											<h3 class="fs24 lh30 mb20">商标具有显著性，既区别于具有叙述性.</h3>
+											<p class="fs14 lh24">
+												商标具有独占性，使用商标的目的是为了区别与他人的商品来源或服务项目，便于消费 者识别。所以，注册商标所有人对其商标具有专用权、独占权，未经注册商标所有人许 可，他人不得擅自使用。
+											</p>
+										</a>
+									</div>
+									<div class="more col-lg-2 hidden-xs hidden-sm">
+										<a rel="nofollow" class="ck-more pull-right bd50b" href="newsdetial.html">
+
+										</a>
+									</div>
+								</li>
+								<li class="clearfix news-li bd100 tbcenters op00 tstion03">
+									<div class="date col-md-2 col-xs-4">
+										<h4 class="fs60 lh80">
+												2018
+											</h4>
+										<p class="fs30 lh36 op06">
+											07-08
+										</p>
+									</div>
+									<div class="main col-lg-8 col-xs-8">
+										<a rel="nofollow" href="newsdetial.html" class="tstion03">
+											<h3 class="fs24 lh30 mb20">商标具有显著性，既区别于具有叙述性.</h3>
+											<p class="fs14 lh24">
+												商标具有独占性，使用商标的目的是为了区别与他人的商品来源或服务项目，便于消费 者识别。所以，注册商标所有人对其商标具有专用权、独占权，未经注册商标所有人许 可，他人不得擅自使用。
+											</p>
+										</a>
+									</div>
+									<div class="more col-lg-2 hidden-xs hidden-sm">
+										<a rel="nofollow" class="ck-more pull-right bd50b" href="newsdetial.html">
+
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/新闻中心-->
+			<!--页脚-->
+			<div class="cyz-footer mt100 ptb60">
+			</div>
+			<!--/页脚-->
+		</div>
+
+		<!--品牌集合查看更多-->
+		<!--点击查看更多-->
+		<div class="shangbiao-pos">
+			<div class="tbcenters">
+				<div class="container cyz-ppjh">
+					<div class="item clearfix active">
+						<div class="border-x tstion03">
+							<div class="image tbcenter clearfix">
+								<div class="my-close bd50b"></div>
+								<div class="col-lg-4 col-sm-4 max col-xs-12">
+									<img src="images/pic/logo_1.png" />
+								</div>
+								<div class="col-lg-8 col-sm-8 col-xs-12 pos-bottom">
+									<p class="fs14 cl000 fs08">商标名称</p>
+									<h3 class="lh50 name">柠檬工坊</h3>
+									<p class="fs14 fs cl000 fs08 numbers">注册号：8714526</p>
+									<h4 class="fs18 lh30 pt20 cl000">核定使用商品/服务项目：</h4>
+									<p class="fs14 lh22 cl000 fs08 op06 detial">餐厅；饭店；流动饮食供应；快餐店；住所代理(旅馆、供膳寄宿处)；自助餐馆；养老院； 日间托儿所（看孩子）；烹饪设备出租；出租椅子、桌子、桌布和玻璃器皿（截止）
+									</p>
+								</div>
+							</div>
+							<div class="list ptb26">
+								<h3 class="fs18 ls1 lh30">需要商标请留下您的信息</h3>
+								<form>
+									<div class="input-ul pt20">
+										<input type="text" placeholder="公司名称:"  class="a"/>
+										<input type="text" placeholder="您的姓名:" />
+										<input type="text" placeholder="您的电话:" />
+									</div>
+									<div class="pt20">
+										<textarea rows="3" cols="1" placeholder="商标用途简述:"></textarea>
+									</div>
+									<input type="submit" value="申请使用" id="tijiao">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/base.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+
+</html>

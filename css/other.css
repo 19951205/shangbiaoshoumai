@@ -1,0 +1,241 @@
+.look-more-mian {
+	text-align: center;
+}
+
+#banner .carousel-inner {
+	max-height: 500px;
+	overflow: hidden;
+}
+
+.banner-text {
+	top: 60%;
+	opacity: 1;
+}
+
+.banner-text p {
+	display: block;
+}
+
+.cyz-base-head {
+	text-align: left;
+}
+
+.cyz-base-head .head-line {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.cyz-base-head .container {
+	padding-bottom: 70px;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.cyz-base-head.bg01 {
+	background: url(../images/icon/bgd-01.png) no-repeat right center;
+	-webkit-background-size: 60%%;
+	-moz-background-size: 60%;
+	background-size: 60%;
+}
+
+.cyz-base-head.bg02 {
+	background-image: url(../images/icon/bg_02.png);
+}
+
+.cyz-base-head.bg03 {
+	background-image: url(../images/icon/bg-03.png);
+}
+
+.cyz-base-head.bg04 {
+	background-image: url(../images/icon/ms.png);
+}
+
+.cyz-base-head.bg05 {
+	background-image: url(../images/icon/bg-05.png);
+}
+
+
+/*关于我们*/
+
+.about-us-main {
+	color: #8a8a8a;
+}
+
+.about-us-main .image {
+	overflow: hidden;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	margin: 70px 0;
+}
+
+.about-us-main p+p {
+	margin-top: 30px;
+}
+
+
+/*商標注冊*/
+
+.cyz-ppjh .item>div {
+	margin-top: 54px;
+}
+
+
+/*商标注册*/
+
+.cyz-sbzc {
+	color: #444444;
+}
+
+.cyz-sbzc .main h2 {
+	font-size: 36px;
+}
+
+.cyz-sbzc .main p {
+	margin-top: 30px;
+	line-height: 30px;
+}
+
+
+/*新闻中心详情页*/
+
+.news-detial .pagination {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.news-detial .cyz-news-detial h2 {
+	margin-bottom: 20px;
+	font-size: 36px;
+}
+
+.news-detial .cyz-news-detial .date {
+	background: #3959ce;
+	display: inline-block;
+	padding: 10px 30px;
+	margin: 10px 0 30px;
+	color: #fff;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-o-border-radius: 30px;
+}
+
+.news-detial .cyz-news-detial .date span {
+	padding: 0 30px;
+}
+
+.news-detial .cyz-news-detial .list p {
+	line-height: 30px;
+}
+
+.news-detial .cyz-news-detial .list img {
+	margin: 50px 0;
+	width: 100%;
+	border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+}
+
+
+/*联系我们*/
+
+#allmap {
+	height: 400px;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+}
+
+#allmap .BMap_noprint {
+	display: none;
+}
+
+#allmap .anchorBL {
+	bottom: 3px!important;
+}
+
+@media only screen and (max-width: 767px) {
+	.pt20 {
+		padding: 0.5rem 0;
+	}
+	.pt80 {
+		padding-top: 1.6rem;
+	}
+	.lh50 {
+		line-height: 2rem;
+	}
+	#banner .carousel-inner {
+		max-height: 15rem;
+		overflow: hidden;
+	}
+	.cyz-base-head.bg04 {
+		background-image: url(../images/icon/bg-01.png);
+	}
+	.cyz-base-head .container {
+		padding-bottom: 1.5rem;
+	}
+	.cyz-sbzc .contactbg {
+		background-image: url(../images/icon/cont.png);
+	}
+	/*关于我们*/
+	.about-us-main {
+		font-size: .9rem;
+	}
+	.about-us-main img {
+		max-width: 200%;
+		width: 190%;
+		margin-left: -45%;
+	}
+	.about-us-main .image {
+		margin: 1.8rem 0;
+	}
+	.about-us-main p+p {
+		margin-top: 1rem;
+	}
+	/*商标注册*/
+	.cyz-sbzc .main h2 {
+		font-size: 1.5rem;
+	}
+	.cyz-sbzc .main p {
+		margin-top: .8rem;
+	}
+	/*新闻三级页面*/
+	.news-detial .cyz-news-detial h2 {
+		font-size: 1.3rem;
+		line-height: 1.7rem;
+		margin-bottom: 0;
+	}
+	.news-detial .cyz-news-detial .date {
+		padding: 0.6rem 0rem;
+		margin: 1.1rem 0px;
+		font-size: 0.8rem;
+		width: 100%;
+		text-align: center;
+	}
+	.news-detial .cyz-news-detial .date span {
+		padding: 0 0.2rem;
+		font-size: .4rem;
+	}
+	.news-detial .cyz-news-detial .list p {
+		line-height: 30px;
+		font-size: 0.9rem;
+		line-height: 1.5rem;
+	}
+	.news-detial .cyz-news-detial .list img {
+		margin: 1rem 0;
+		border-radius: 1.4rem;
+		-webkit-border-radius: 1.4rem;
+		-moz-border-radius: 1.4rem;
+	}
+	/*联系我们*/
+	#allmap {
+		height: 13.2rem;
+		margin-top: 1.6rem;
+	}
+	/*品牌集合*/
+	.look-more-white.pt20 {
+		padding-top: 1rem
+	}
+}

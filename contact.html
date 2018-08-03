@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="no">
+		<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/other.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<!-- [if it IE 9]>
+			<script src="lib/html5shiv/html5shiv.min.js"></script>
+	 	    <script src="lib/respond/respond.min.js"></script>
+		<![end if]-->
+		<title>title</title>
+	</head>
+
+	<body>
+		<div class="maxWidth">
+			<!--banner-->
+			<div class="cyz-banner">
+				<div id="banner">
+					<div class="carousel-inner">
+						<img src="images/pic/bann.jpg" />
+						<!--pc-->
+						<div class="banner-text fs48 hidden-xs">
+							<p>专业 高效 诚信 可靠</p>
+							<p>十余年执业经验保障，善于传承才能善于创新！</p>
+						</div>
+						<!--Mobile-->
+						<div class="banner-text fs48 visible-xs">
+							<p>专业 高效 诚信 可靠</p>
+							<p>十余年执业经验保障</p>
+							<p>善于传承才能善于创新！</p>
+						</div>
+					</div>
+				</div>
+				<div class="cyz-banner-main">
+					<div class="container">
+						<!--导航开始-->
+						<div class="cyz-nav ptb60">
+							<div class="navbar navbar-mynav navbar-static-top">
+								<div class="cyz-logo clearfix">
+									<div class="navbar-header">
+										<button id="btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-list" aria-controls="nav-list"></button>
+										<a rel="nofollow" class="navbar-brand" href="./index.html">
+											<img src="images/icon/logo.png" width="100%" />
+										</a>
+									</div>
+									<div class="collapse navbar-collapse pull-right" id="nav-list" style="border: none; height: 0px;" aria-expanded="false">
+										<ul class="nav navbar-nav clearfix pt30">
+										</ul>
+										<div id='nav-close' class="visible-xs"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--导航结束-->
+					</div>
+				</div>
+			</div>
+			<div class="cyz-sbzc">
+				<div class="cyz-base-head bg01">
+					<div class="container">
+						<h2 class="h2 fs48 pt80 lh60">联系我们</h2>
+						<p class="Yw fs18 lh24">CONTACT US</p>
+						<div class="head-line mtb26"></div>
+						<p class="Zw fs24">商标注册基本常识 带您一次性深入了解清楚</p>
+					</div>
+				</div>
+				<div class="container pt80">
+					<div class="clearfix tbcenter">
+						<div class="map col-lg-6 col-md-5 col-sm-4 fs18 lh36">
+							<p>官方热线：400-601-9687</p>
+							<p> 官网邮箱：2803258418@qq.com</p>
+							<p> 公司地址：济南市槐荫区齐州路2066号新支点集团 </p>
+							<p>官方QQ：280325987</p>
+						</div>
+						<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=vFCEHGOhkifgcQZYtvGMEsTyCU4NwDsT"></script>
+						<div class="map col-lg-6 col-md-7 col-sm-8" id="allmap">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--页脚-->
+			<div class="cyz-footer mt100 ptb60">
+			</div>
+			<!--/页脚-->
+		</div>
+		<script type="text/javascript" src="js/base.js"></script>
+		<script type="text/javascript">
+			// 百度地图API功能
+			var map = new BMap.Map("allmap");
+			var point = new BMap.Point(116.967174, 36.642288);
+			map.centerAndZoom(point, 15);
+			var myIcon = new BMap.Icon("images/icon/ditu.png", new BMap.Size(50, 50)); //定义自己的标注
+			var marker2 = new BMap.Marker(point, {
+				icon: myIcon
+			}); // 创建标注
+			map.addOverlay(marker2);
+			<!--marker2.setAnimation(BMAP_ANIMATION_BOUNCE)-->
+		</script>
+	</body>
+
+</html>
